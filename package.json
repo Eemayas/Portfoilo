@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Eemayas/Portfoilo.git",
+  "homepage": "https://www.manandharprashant.com.np/",
   "scripts": {
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d build",
