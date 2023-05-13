@@ -2,7 +2,14 @@ import logo from "./logo-no-background.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
-import web from "./web.png";
+import flutter from "./flutter.png";
+import flutter2 from "./Flutter2.png";
+import react from "./React.png";
+import pythonimg from "./Pyrthon.png";
+// import web from "./web.png";
+import Cplus from "./C++.png";
+import C from "./C.png";
+import web from "./web2.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -31,10 +38,16 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  C,
+  Cplus,
   logo,
+  react,
+  pythonimg,
   backend,
   creator,
+  flutter,
   mobile,
+  flutter2,
   web,
   github,
   menu,
