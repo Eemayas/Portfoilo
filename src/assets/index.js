@@ -4,6 +4,8 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import flutter from "./flutter.png";
 import flutter2 from "./Flutter2.png";
+import Html2 from "./html2.png";
+import css2 from "./css2.png";
 import react from "./React.png";
 import pythonimg from "./Pyrthon.png";
 // import web from "./web.png";
@@ -37,7 +39,9 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import ProfileAvatar from "./ProfileAvatar.png"
 export {
+  ProfileAvatar,
   C,
   Cplus,
   logo,
@@ -48,6 +52,8 @@ export {
   flutter,
   mobile,
   flutter2,
+  Html2,
+  css2,
   web,
   github,
   menu,

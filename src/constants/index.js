@@ -1,7 +1,10 @@
 import {
+  ProfileAvatar,
   mobile,
   backend,
   creator,
+  Html2,
+  css2,
   C,
   react,
   pythonimg,
@@ -84,24 +87,25 @@ const services = [
 const technologies = [
   {
     name: "HTML 5",
-    icon: html,
+    icon: Html2,
   },
   {
     name: "CSS 3",
-    icon: css,
+    icon: css2,
   },
   {
     name: "JavaScript",
     icon: javascript,
   },
   // {
-  //   
+  //
   // },
   {
-name: "React",
+    name: "React",
     icon: react,
-  }, {
-name: "Python",
+  },
+  {
+    name: "Python",
     icon: pythonimg,
   },
   // {
@@ -143,7 +147,7 @@ name: "Python",
   {
     name: "Flutter",
     icon: flutter2,
-  }
+  },
 ];
 
 const experiences = [
