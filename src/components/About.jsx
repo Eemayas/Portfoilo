@@ -62,7 +62,7 @@ const About = () => {
         >
           {Bio}
         </motion.p>
-        <motion.div variants={textVariant()}><ProfileAvatars /></motion.div>
+      <ProfileAvatars />
         
       </div>
       
