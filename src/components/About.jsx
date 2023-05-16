@@ -42,7 +42,7 @@ const ProfileAvatars = () => {
           alt={"profile Pic"}
         />
         <div className="absolute w-full h-full border-t-4 border-b-4 border-t-lime-500 border-b-blue-500 border-opacity-50 rounded-full animate-spin-right"></div>
-        <div className="absolute w-[85%] h-[85%] border-l-4 border-r-4 border-l-[#ff0000] border-r-[#ff8000] border-opacity-50 rounded-full animate-spin-right"></div>
+        <div className="absolute w-[85%] h-[85%] border-l-4 border-r-4 border-l-[#ff0000] border-r-[#ff8000] border-opacity-50 rounded-full animate-spin-left"></div>
       </div>
     </div>
   );
@@ -55,17 +55,17 @@ const About = () => {
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
-      
-      <motion.div className="md:flex-row flex flex-col-reverse justify-around" variants={textVariant()}>
-      
+      <div className="md:flex-row flex flex-col-reverse justify-around">
         <motion.p
           className="md:w-[50%] mt-4 w-[100%] text-justify text-secondary text-[17px]  leading-[30px]"
           variants={fadeIn("", "", 0.1, 1)}
         >
           {Bio}
         </motion.p>
-        <ProfileAvatars />
-      </motion.div>
+        <motion.div variants={textVariant()}><ProfileAvatars /></motion.div>
+        
+      </div>
+      
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => {
