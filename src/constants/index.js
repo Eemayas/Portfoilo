@@ -58,22 +58,22 @@ const services = [
     title: "Flutter Developer",
     icon: flutter,
   },
-  {
-    title: "C",
-    icon: C,
-  },
-  {
-    title: "C++",
-    icon: Cplus,
-  },
-  {
-    title: "React JS",
-    icon: react,
-  },
-  {
-    title: "Python",
-    icon: pythonimg,
-  },
+  // {
+  //   title: "C",
+  //   icon: C,
+  // },
+  // {
+  //   title: "C++",
+  //   icon: Cplus,
+  // },
+  // {
+  //   title: "React JS",
+  //   icon: react,
+  // },
+  // {
+  //   title: "Python",
+  //   icon: pythonimg,
+  // },
   // {
   //   title: "Backend Developer",
   //   icon: backend,
