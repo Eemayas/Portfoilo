@@ -7,6 +7,8 @@ import { ProfileAvatar } from "../assets";
 import { fadeIn, textVariant } from "../utils/motion.js";
 import { SectionWrapper } from "../hoc";
 import { Avatar } from "@mui/material";
+import { staggerContainer } from "../utils/motion";
+
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full ">
@@ -51,10 +53,11 @@ const About = () => {
   const Bio = `"Hello there! I am a highly skilled computer engineering professional with expertise in various programming languages such as C, C++, Flutter, Dart, React, HTML, CSS, and JavaScript. I am a quick learner and always eager to take on new challenges that help me further expand my skillset. In my free time, I love to indulge in my hobbies of cycling and reading novels and comics. My passion for technology and innovation drives me to continuously learn and stay up-to-date with the latest trends in the industry. With my strong work ethic and exceptional problem-solving skills, I am confident in my ability to contribute to any project I am a part of. Thank you for taking the time to read my bio, and I look forward to potentially working with you!"`;
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview</h2>
-      </motion.div>
+    <Animation Component={<motion.div variants={textVariant()}>
+          <p className={styles.sectionSubText}>Introduction</p>
+          <h2 className={styles.sectionHeadText}>Overview</h2>
+        </motion.div>} idName={"about"} />
+<Animation Component={
       <div className="md:flex-row flex flex-col-reverse justify-around">
         <motion.p
           className="md:w-[50%] mt-4 w-[100%] text-justify text-secondary text-[17px]  leading-[30px]"
@@ -65,8 +68,8 @@ const About = () => {
       <ProfileAvatars />
         
       </div>
-      
-
+      } />
+<Animation Component={      
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => {
           return (
@@ -78,9 +81,30 @@ const About = () => {
             />
           );
         })}
-      </div>
+      </div>} />
     </>
   );
 };
 
-export default SectionWrapper(About, "about");
+const Animation = ({Component,idName}) => {
+  return (
+    <div>
+      <motion.section
+        variants={staggerContainer()}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.25 }}
+        className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+      >
+        <span className="hash-span" id={"about"}>
+          &nbsp;
+        </span>
+        {Component}
+      </motion.section>
+    </div>
+  )
+}
+
+
+export default About;
+//  SectionWrapper(About, "about");
