@@ -32,6 +32,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  CommingSoon,
 } from "../assets";
 
 export const navLinks = [
@@ -242,7 +243,7 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    // image: carrent,
+    image: CommingSoon,
     source_code_link: "https://github.com/",
   },
   {
@@ -261,8 +262,7 @@ const projects = [
         name: "Dart",
         color: "pink-text-gradient",
       },
-    ],
-    // image: jobit,
+    ],image: CommingSoon,
     source_code_link: "https://github.com/",
   },
   {
@@ -285,7 +285,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    // image: tripguide,
+    image: CommingSoon,
     source_code_link: "https://github.com/",
   },
 ];

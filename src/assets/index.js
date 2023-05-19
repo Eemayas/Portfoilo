@@ -8,6 +8,7 @@ import Html2 from "./html2.png";
 import css2 from "./css2.png";
 import react from "./React.png";
 import pythonimg from "./Pyrthon.png";
+import CommingSoon from "./Commingsoon.png"
 // import web from "./web.png";
 import Cplus from "./C++.png";
 import C from "./C.png";
@@ -55,6 +56,7 @@ export {
   Html2,
   css2,
   web,
+  CommingSoon,
   github,
   menu,
   close,
