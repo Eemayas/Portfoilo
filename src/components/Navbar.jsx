@@ -5,7 +5,7 @@ import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 const Navbar = () => {
   const [actice, setActice] = useState("");
-  const [toggle,setToogle] = useState(false);
+  const [toggle, setToogle] = useState(false);
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
@@ -36,31 +36,43 @@ const Navbar = () => {
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
                 onClick={() => setActice(Links.title)}
               >
-                {Links.title}
+               <a href={`#${Links.id}`}>{Links.title}</a>
+                
               </li>
             );
           })}
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
-        <img src={!toggle?menu:close} alt="menu" className="w-[28px] h-[28px] object-contain cursor-pointer" onClick={()=>setToogle(!toggle)} />
-<div className={`${!toggle? "hidden":"flex"} p-6 black-gradient absolute top-20 right-0 mx-0 my-2 min-w-[140px] z-10 rounded-xl`}>
-<ul className=" list-none flex justify-end items-start flex-col gap-4">
-          {navLinks.map((Links) => {
-            return (
-              <li
-                key={Links.id}
-                className={`${
-                  actice === Links.title ? "text-white" : "text-secondary"
-                } font-poppins font-medium cursor-pointer text-[16px]`}
-                onClick={() => {setActice(Links.title);
-                setToogle(!toggle)}}
-              >
-                {Links.title}
-              </li>
-            );
-          })}
-        </ul>
-</div>
+          <img
+            src={!toggle ? menu : close}
+            alt="menu"
+            className="w-[28px] h-[28px] object-contain cursor-pointer"
+            onClick={() => setToogle(!toggle)}
+          />
+          <div
+            className={`${
+              !toggle ? "hidden" : "flex"
+            } p-6 black-gradient absolute top-20 right-0 mx-0 my-2 min-w-[140px] z-10 rounded-xl`}
+          >
+            <ul className=" list-none flex justify-end items-start flex-col gap-4">
+              {navLinks.map((Links) => {
+                return (
+                  <li 
+                    key={Links.id}
+                    className={`${
+                      actice === Links.title ? "text-white" : "text-secondary"
+                    } font-poppins font-medium cursor-pointer text-[16px]`}
+                    onClick={() => {
+                      setActice(Links.title);
+                      setToogle(!toggle);
+                    }}
+                  >
+                    {Links.title}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
