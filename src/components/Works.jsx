@@ -6,7 +6,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-
+import { FaArrowRight } from 'react-icons/fa';
 const ProjectCard = ({
   index,
   name,
@@ -85,6 +85,19 @@ const Works = () => {
       <ProjectCard key={`project-${index}`} index={index} {...project} />
     ))}
        </div>
+       <div className="flex justify-normal  xs:justify-end">
+       <button
+              type="submit"
+              className="bg-tertiary flex justify-end mt-5 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-slate-500"
+            >
+            See More Projects
+            <div className="flex items-center xs:pt-1 pt-3  ml-3 ">
+              <FaArrowRight />
+            </div> 
+            
+            </button> 
+       </div>
+       
     </>
   );
 };

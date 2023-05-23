@@ -13,45 +13,56 @@ const TechCard = ({ index, title, icon }) => {
         className="w-full green-pink-gradient p-[1px] rounded-[30px] shadow-card "
         variants={fadeIn("right", "spring", 0.25 * index, 0.55)}
       >
-        <div className="bg-tertiary rounded-[30px] py-5 px-5"
-          // className="bg-tertiary rounded-[20px] px-12 min-h-[120px] flex flex-col justify-evenly items-center "
-          // options={{ max: 45, scale: 1, speed: 450 }}
-        >
+        <div className="bg-tertiary rounded-[30px] ">
           <img
             src={icon}
             alt={title}
-            className="w-full h-full object-contain "
+            className="w-full h-full object-contain py-5 px-5"
           ></img>
-          {/* <h3 className="text-white text-[20px] font-bold text-center ">
-            ddd
-          </h3> */}
+
+          <div class=" pb-2 truncate  w-full text-white font-quicksand flex flex-col items-center justify-center">
+            {title}
+          </div>
         </div>
       </motion.div>
+      
     </Tilt>
   );
 };
 const Tech = () => {
   return (
     <div className="flex flex-row flex-wrap justify-center gap-10">
-      {technologies.map((technology,index) => (<TechCard index={index} key={technology.name} icon={technology.icon} />
-         
+      {technologies.map((technology, index) => (
+        <TechCard
+          index={index}
+          key={technology.name}
+          icon={technology.icon}
+          title={technology.name}
+        />
       ))}
     </div>
   );
-}; 
-{/* <div
+};
+{
+  /* <div
             className="w-28 h-28 rounded-[40px] bg-tertiary"
             key={technology.name}
-          > */}
-            {/* <img
+          > */
+}
+{
+  /* <img
               className="h-[100%] w-[100%] "
               src={technology.icon}
               alt={technology.name}
-            /> */}
-           
-  
-            {/* <BallCanvas icon={technology.icon} /> */}
-          {/* </div> */}
+            /> */
+}
+
+{
+  /* <BallCanvas icon={technology.icon} /> */
+}
+{
+  /* </div> */
+}
 // const Tech = () => {
 //   return (
 //     <div className='flex flex-row flex-wrap justify-center gap-10'>

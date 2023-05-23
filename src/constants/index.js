@@ -33,6 +33,11 @@ import {
   tripguide,
   threejs,
   CommingSoon,
+  Gmail,
+  Facebook,
+  Twitter,
+  LinkedIn,
+  Instagram,
 } from "../assets";
 
 export const navLinks = [
@@ -59,30 +64,6 @@ const services = [
     title: "Flutter Developer",
     icon: flutter,
   },
-  // {
-  //   title: "C",
-  //   icon: C,
-  // },
-  // {
-  //   title: "C++",
-  //   icon: Cplus,
-  // },
-  // {
-  //   title: "React JS",
-  //   icon: react,
-  // },
-  // {
-  //   title: "Python",
-  //   icon: pythonimg,
-  // },
-  // {
-  //   title: "Backend Developer",
-  //   icon: backend,
-  // },
-  // {
-  //   title: "Content Creator",
-  //   icon: creator,
-  // },
 ];
 
 const technologies = [
@@ -98,9 +79,6 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  // {
-  //
-  // },
   {
     name: "React",
     icon: react,
@@ -109,14 +87,6 @@ const technologies = [
     name: "Python",
     icon: pythonimg,
   },
-  // {
-  //   name: "React JS",
-  //   icon: reactjs,
-  // },
-  // {
-  //   name: "Redux Toolkit",
-  //   icon: redux,
-  // },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -125,26 +95,18 @@ const technologies = [
     name: "Node JS",
     icon: nodejs,
   },
-  // {
-  //   name: "MongoDB",
-  //   icon: mongodb,
-  // },
   {
     name: "Three JS",
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
-  // {
-  //   name: "docker",
-  //   icon: docker,
-  // },
   {
     name: "Flutter",
     icon: flutter2,
@@ -262,13 +224,15 @@ const projects = [
         name: "Dart",
         color: "pink-text-gradient",
       },
-    ],image: CommingSoon,
+    ],
+    image: CommingSoon,
     source_code_link: "https://github.com/",
   },
   {
     name: "ProjectHub",
     description: "Project Management website",
-    tags: [{
+    tags: [
+      {
         name: "MongoDB",
         color: "green-text-gradient",
       },
@@ -290,4 +254,39 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const contacts = [
+  {
+    name: "Facebook",
+    logo: Facebook,
+    links: "https://www.facebook.com/prashant.manandhar.88/",
+  },
+  // {
+  //   name: "Gmail",
+  //   logo: Gmail,
+  //   links: "",
+  // },
+  {
+    name: "Twitter",
+    logo: Twitter,
+    links: "https://twitter.com/PrashantManand8",
+  },
+  {
+    name: "LinkedIn",
+    logo: LinkedIn,
+    links: "https://www.linkedin.com/in/prashant-manandhar-461917246/",
+  },
+  {
+    name: "Instagram",
+    logo: Instagram,
+    links: "https://www.instagram.com/prashant__manandhar/",
+  },
+];
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  contacts,
+};

@@ -2,21 +2,22 @@ import logo from "./logo-no-background.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
-import flutter from "./flutter.png";
-import flutter2 from "./Flutter2.png";
-import Html2 from "./html2.png";
-import css2 from "./css2.png";
-import react from "./React.png";
-import pythonimg from "./Pyrthon.png";
-import CommingSoon from "./Commingsoon.png"
+
+import CommingSoon from "./Commingsoon.png";
 // import web from "./web.png";
-import Cplus from "./C++.png";
-import C from "./C.png";
 import web from "./web2.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import flutter from "./tech/flutter.png";
+import flutter2 from "./tech/Flutter2.png";
+import Html2 from "./tech/html2.png";
+import css2 from "./tech/css2.png";
+import react from "./tech/React.png";
+import pythonimg from "./tech/Pyrthon.png";
+import Cplus from "./tech/C++.png";
+import C from "./tech/C.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -40,7 +41,14 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
-import ProfileAvatar from "./ProfileAvatar.png"
+import ProfileAvatar from "./ProfileAvatar.png";
+
+import Gmail from "./contacts/Gmail.png";
+import Facebook from "./contacts/Facebook.png";
+import Twitter from "./contacts/Twitter.png";
+import LinkedIn from "./contacts/LinkedIn.png";
+import Instagram from "./contacts/Instagram.png";
+
 export {
   ProfileAvatar,
   C,
@@ -80,4 +88,9 @@ export {
   carrent,
   jobit,
   tripguide,
+  Gmail,
+  Facebook,
+  Twitter,
+  LinkedIn,
+  Instagram,
 };
