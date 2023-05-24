@@ -4,7 +4,7 @@ import ProjectCollection from "./ProjectCollection";
 import ProjectSlider from "./ProjectSlider"
 function App() {
   return (
-    <BrowserRouter >
+    <BrowserRouter basename="/tothepoint_login">
       <div className="relative z-0 bg-primary">
       <Routes>
           <Route path="/" element={<LandingPage />} />
