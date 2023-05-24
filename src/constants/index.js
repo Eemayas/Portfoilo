@@ -38,6 +38,13 @@ import {
   Twitter,
   LinkedIn,
   Instagram,
+  CarRaceGameMenu,
+  CarRaceGameGameOver,
+  CarRaceGameGammingPage,
+  CarRaceGameInstruction,
+  CarRaceGameLeaderBoard,
+  CarRaceGameLevelSelection,
+  CarRaceGameNameEntry,
 } from "../assets";
 
 export const navLinks = [
@@ -206,7 +213,37 @@ const projects = [
       },
     ],
     image: CommingSoon,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Eemayas/2nd-sem-Final-Project.git",
+    imageList: [
+      {
+        url: CarRaceGameGameOver,
+        title: "Game Over",
+      },
+      {
+        url: CarRaceGameNameEntry,
+        title: "Name Entry",
+      },
+      {
+        url: CarRaceGameMenu,
+        title: "Game Menu",
+      },
+      {
+        url: CarRaceGameInstruction,
+        title: "Instruction",
+      },
+      {
+        url: CarRaceGameLeaderBoard,
+        title: "LeaderBoard",
+      },
+      {
+        url: CarRaceGameLevelSelection,
+        title: "Level Selection",
+      },
+      {
+        url: CarRaceGameGammingPage,
+        title: " Gamming Page",
+      },
+    ],
   },
   {
     name: "Meal Up",
@@ -227,6 +264,23 @@ const projects = [
     ],
     image: CommingSoon,
     source_code_link: "https://github.com/",
+    imageList: [
+      {
+        url:
+          "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
+        title: "1",
+      },
+      {
+        url:
+          "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
+        title: "2",
+      },
+      {
+        url:
+          "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
+        title: "3",
+      },
+    ],
   },
   {
     name: "ProjectHub",
@@ -251,6 +305,23 @@ const projects = [
     ],
     image: CommingSoon,
     source_code_link: "https://github.com/",
+    imageList: [
+      {
+        url:
+          "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
+        title: "1",
+      },
+      {
+        url:
+          "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
+        title: "2",
+      },
+      {
+        url:
+          "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
+        title: "3",
+      },
+    ],
   },
 ];
 

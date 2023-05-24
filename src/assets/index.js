@@ -49,6 +49,13 @@ import Twitter from "./contacts/Twitter.png";
 import LinkedIn from "./contacts/LinkedIn.png";
 import Instagram from "./contacts/Instagram.png";
 
+import CarRaceGameMenu from "./Projects/CarRaceGame/Menu.png";
+import CarRaceGameGameOver from "./Projects/CarRaceGame/GameOver.png";
+import CarRaceGameGammingPage from "./Projects/CarRaceGame/GamingPage.png";
+import CarRaceGameInstruction from "./Projects/CarRaceGame/Instruction.png";
+import CarRaceGameLeaderBoard from "./Projects/CarRaceGame/LeaderBoard.png";
+import CarRaceGameLevelSelection from "./Projects/CarRaceGame/LevelSelection.png";
+import CarRaceGameNameEntry from "./Projects/CarRaceGame/NameEntry.png";
 export {
   ProfileAvatar,
   C,
@@ -93,4 +100,11 @@ export {
   Twitter,
   LinkedIn,
   Instagram,
+  CarRaceGameMenu,
+  CarRaceGameGameOver,
+  CarRaceGameGammingPage,
+  CarRaceGameInstruction,
+  CarRaceGameLeaderBoard,
+  CarRaceGameLevelSelection,
+  CarRaceGameNameEntry,
 };

@@ -8,7 +8,9 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import About2 from './About2';
+import ProjectSlide from './ProjectSlider';
 import LetSTalk from './Let\'sTalk';
+
 export {
   Hero,
   Navbar,
@@ -24,4 +26,5 @@ export {
   ComputersCanvas, 
   StarsCanvas,
   LetSTalk,
+  ProjectSlide,
 }

@@ -1,28 +1,20 @@
-import { BrowserRouter } from "react-router-dom";
-import { About, About2,Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas,LetSTalk} from "./components"
+import { BrowserRouter ,Route,Routes} from "react-router-dom";
+import LandingPage from "./LandingPage";
+import ProjectCollection from "./ProjectCollection";
+import ProjectSlider from "./ProjectSlider"
 function App() {
-
   return (
-    <BrowserRouter>
+    <BrowserRouter >
       <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero/>
+      <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/projectcollection" element={<ProjectCollection />} />
+          <Route path="/projectcollection/slider" element={<ProjectSlider />} />
+
+        </Routes>
         </div>
-        <About/>
-        <About2/>
-        {/* <Experience/> */}
-        <Tech/>
-        <Works/>
-        {/* <Feedbacks/> */}
-        <div className="relative z-0 bg-primary">
-        <LetSTalk/>
-        <Contact/>
-        <StarsCanvas/>
-        </div>
-      </div>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
