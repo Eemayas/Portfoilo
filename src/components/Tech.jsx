@@ -1,11 +1,10 @@
 import React from "react";
 
-import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
-import { fadeIn, textVariant } from "../utils/motion.js";
+import { fadeIn } from "../utils/motion.js";
 const TechCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[120px] w-[120px] ">

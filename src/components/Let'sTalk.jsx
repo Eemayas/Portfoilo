@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../style";
-import { EarthCanvas } from "./canvas";
+// import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 const LetsTalk = () => {
@@ -24,7 +24,7 @@ const LetsTalk = () => {
     });
   };
   const handleSubmit = (e) => {
-    console.log(form)
+    console.log(form);
     e.preventDefault();
     setLoading(true);
     // template_i630qnb
@@ -59,7 +59,7 @@ const LetsTalk = () => {
   return (
     <>
       <div
-        className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+        className={`xl:mt-12  flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
       >
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
@@ -120,7 +120,7 @@ const LetsTalk = () => {
           variants={slideIn("right", "tween", 0.2, 1)}
           className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
         >
-          <EarthCanvas />
+          {/* <EarthCanvas /> */}
         </motion.div>
       </div>
     </>

@@ -8,15 +8,13 @@ import {contacts } from "../constants";
 
 const Contact = () => {
   return (
-   
-    <div className="bg-black-100 p-8 rounded-2xl">
-
-    
+   <div className="bg-black-100 rounded-2xl">
+     <div className=" p-8">
        <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Get In Touch.</p>
         <h2 className={styles.sectionHeadText}>Contacts</h2>
       </motion.div>
-      <div className="flex flex-row flex-wrap justify-center gap-10">
+      </div><div className="flex flex-row flex-wrap justify-center gap-10">
       {contacts.map((contact, index) => (
         <ContactCard
           index={index}
@@ -26,14 +24,16 @@ const Contact = () => {
           logo={contact.logo}
         />
       ))}
-    </div></div>
+    </div>
+   </div>
+   
   
   );
 };
 
 const ContactCard = ({index,name,links,logo}) => {
   return (
-    <Tilt className="xs:w-[120px] w-[120px] ">
+    <Tilt className="xs:w-[110px] w-[110px] ">
 <motion.div
         className="w-full green-pink-gradient p-[1px] rounded-[30px] shadow-card "
         variants={fadeIn("right", "spring", 0.25 * index, 0.55)}
