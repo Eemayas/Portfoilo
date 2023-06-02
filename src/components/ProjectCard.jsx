@@ -2,7 +2,7 @@ import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { github } from "../assets";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn } from "../utils/motion";
 import { useNavigate } from "react-router-dom";
 
 const ProjectCard = ({

@@ -1,11 +1,10 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
 import { styles } from "../style";
-// import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+
 const LetsTalk = () => {
   const [form, setForm] = useState({
     name: "",
@@ -27,9 +26,6 @@ const LetsTalk = () => {
     console.log(form);
     e.preventDefault();
     setLoading(true);
-    // template_i630qnb
-    // service_ar5qbfv
-    //
     emailjs
       .send(
         "service_ar5qbfv",
@@ -120,7 +116,6 @@ const LetsTalk = () => {
           variants={slideIn("right", "tween", 0.2, 1)}
           className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
         >
-          {/* <EarthCanvas /> */}
         </motion.div>
       </div>
     </>

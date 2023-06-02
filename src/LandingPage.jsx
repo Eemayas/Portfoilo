@@ -9,7 +9,6 @@ import {
   Navbar,
   Tech,
   Works,
-  StarsCanvas,
   LetSTalk,
 } from "./components";
 const LandingPage = () => {
@@ -28,7 +27,6 @@ const LandingPage = () => {
       <div className="relative z-0 bg-primary">
         <LetSTalk />
         <Contact />
-        <StarsCanvas />
       </div>
       {/* <Project /> */}
     </div>

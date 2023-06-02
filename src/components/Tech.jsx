@@ -1,10 +1,10 @@
 import React from "react";
-
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { fadeIn } from "../utils/motion.js";
+
 const TechCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[120px] w-[120px] ">
@@ -42,36 +42,5 @@ const Tech = () => {
     </div>
   );
 };
-{
-  /* <div
-            className="w-28 h-28 rounded-[40px] bg-tertiary"
-            key={technology.name}
-          > */
-}
-{
-  /* <img
-              className="h-[100%] w-[100%] "
-              src={technology.icon}
-              alt={technology.name}
-            /> */
-}
-
-{
-  /* <BallCanvas icon={technology.icon} /> */
-}
-{
-  /* </div> */
-}
-// const Tech = () => {
-//   return (
-//     <div className='flex flex-row flex-wrap justify-center gap-10'>
-//       {technologies.map((technology) => (
-//         <div className='w-28 h-28' key={technology.name}>
-//           <BallCanvas icon={technology.icon} />
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
 
 export default SectionWrapper(Tech, "tech");
