@@ -25,6 +25,8 @@ import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 
 import ProfileAvatar from "./ProfileAvatar.png";
+import ProfilePic2 from "./Profilepic2.png";
+import ProfileIcon from "./ProfileIcon.png";
 
 import Gmail from "./contacts/Gmail.png";
 import Facebook from "./contacts/Facebook.png";
@@ -69,6 +71,8 @@ export {
   Twitter,
   LinkedIn,
   Instagram,
+  ProfilePic2,
+  ProfileIcon,
   CarRaceGameMenu,
   CarRaceGameGameOver,
   CarRaceGameGammingPage,
