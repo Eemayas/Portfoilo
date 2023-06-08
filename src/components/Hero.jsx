@@ -9,8 +9,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const Hero = () => {
   return (
-      <section className="mx-auto">
-      <>
+      <section className="mt-10 mx-auto">
       <div
           className={` bg-white bg-opacity-20 backdrop-blur-lg rounded-[50px] drop-shadow-lg w-full h-fit md:min-h-[80%] max-w-7xl mx-auto flex flex-col-reverse md:flex-row  p-6 md:p-20  gap-5 items-center `}
         >
@@ -80,8 +79,6 @@ const Hero = () => {
             />
           </div>
         </a></div>
-        </>
-        
       </section>
    
   );
