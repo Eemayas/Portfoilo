@@ -122,4 +122,4 @@ const LetsTalk = () => {
   );
 };
 
-export default SectionWrapper(LetsTalk, "contact");
+export default SectionWrapper(LetsTalk);
