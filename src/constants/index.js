@@ -14,10 +14,14 @@ import {
   figma,
   threejs,
   CommingSoon,
+
+  Github,
+  Gmail,
   Facebook,
   Twitter,
   LinkedIn,
   Instagram,
+
   CarRaceGameMenu,
   CarRaceGameGameOver,
   CarRaceGameGammingPage,
@@ -331,11 +335,11 @@ const contacts = [
     logo: Facebook,
     links: "https://www.facebook.com/prashant.manandhar.88/",
   },
-  // {
-  //   name: "Gmail",
-  //   logo: Gmail,
-  //   links: "",
-  // },
+  {
+    name: "Github",
+    logo: Github,
+    links: "https://github.com/Eemayas",
+  },
   {
     name: "Twitter",
     logo: Twitter,
