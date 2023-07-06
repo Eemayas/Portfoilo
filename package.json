@@ -17,6 +17,7 @@
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.13.0",
+    "atomic-spinner": "^1.2.5",
     "framer-motion": "^10.12.9",
     "maath": "^0.5.3",
     "react": "^18.2.0",
