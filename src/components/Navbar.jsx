@@ -32,7 +32,7 @@ const Navbar = () => {
               <li
                 key={Links.id}
                 className={`${
-                  actice === Links.title ? "text-white" : "text-secondary"
+                  actice === Links.title ? "text-[#915eff]" : "text-white"
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
                 onClick={() => setActice(Links.title)}
               >

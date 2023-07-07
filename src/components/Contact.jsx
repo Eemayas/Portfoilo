@@ -9,13 +9,13 @@ import { contacts } from "../constants";
 const Contact = () => {
   return (
     <div className="bg-black-100 rounded-2xl">
-      <div className=" p-8">
+      <div className="p-8">
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>Get In Touch.</p>
           <h2 className={styles.sectionHeadText}>Contacts</h2>
         </motion.div>
       </div>
-      <div className="flex flex-row flex-wrap justify-center gap-10">
+      <div className="flex flex-row flex-wrap justify-center gap-10 pb-10">
         {contacts.map((contact, index) => (
           <ContactCard
             index={index}
@@ -47,7 +47,7 @@ const ContactCard = ({ index, name, links, logo }) => {
             className="w-full h-full object-contain py-5 px-5"
           ></img>
 
-          <div class=" pb-2 truncate  w-full text-white font-quicksand flex flex-col items-center justify-center">
+          <div class=" pb-2 truncate  w-full text-secondary font-quicksand flex flex-col items-center justify-center">
             {name}
           </div>
         </div>

@@ -19,7 +19,7 @@ const TechCard = ({ index, title, icon }) => {
             className="w-full h-full object-contain py-5 px-5"
           ></img>
 
-          <div class=" pb-2 truncate  w-full text-white font-quicksand flex flex-col items-center justify-center">
+          <div class=" pb-2 truncate  w-full text-secondary font-quicksand flex flex-col items-center justify-center">
             {title}
           </div>
         </div>

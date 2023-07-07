@@ -11,7 +11,7 @@ const Hero = () => {
   return (
       <section className=" mt-20 md:mt-10 mx-auto">
       <div
-          className={` bg-white bg-opacity-10 backdrop-blur-lg rounded-[50px] drop-shadow-lg w-full h-fit md:min-h-[80%] max-w-7xl mx-auto flex flex-col-reverse md:flex-row  p-6 md:p-20  gap-5 items-center `}
+          className={` bg-white bg-opacity-10 backdrop-blur-lg rounded-[50px] drop-shadow-lg w-full h-fit md:min-h-[80%] max-w-7xl mx-auto flex flex-col-reverse md:flex-row  p-6 md:p-20  gap-5 items-center border-transparent animate-circle-rotate`}
         >
         
           <div className="m-0 w-[60%]">

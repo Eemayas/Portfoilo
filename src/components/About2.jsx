@@ -31,7 +31,7 @@ const ServiceCard = ({ index, title, icon }) => {
 };
 const About2 = () => {
   return (
-    <div className="mt-20 flex flex-wrap gap-10">
+    <div className=" flex flex-wrap gap-10">
       {services.map((service, index) => {
         return (
           <ServiceCard
