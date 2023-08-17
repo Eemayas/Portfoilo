@@ -47,7 +47,7 @@ const ContactCard = ({ index, name, links, logo }) => {
             className="w-full h-full object-contain py-5 px-5"
           ></img>
 
-          <div class=" pb-2 truncate  w-full text-secondary font-quicksand flex flex-col items-center justify-center">
+          <div className=" pb-2 truncate  w-full text-secondary font-quicksand flex flex-col items-center justify-center">
             {name}
           </div>
         </div>
