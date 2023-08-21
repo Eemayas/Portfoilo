@@ -14,6 +14,7 @@ const TechCard = ({ index, title, icon }) => {
       >
         <div className="bg-tertiary rounded-[30px] ">
           <img
+            loading="lazy"
             src={icon}
             alt={title}
             className="w-full h-full object-contain py-5 px-5"
@@ -24,7 +25,6 @@ const TechCard = ({ index, title, icon }) => {
           </div>
         </div>
       </motion.div>
-      
     </Tilt>
   );
 };

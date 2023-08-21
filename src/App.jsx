@@ -18,12 +18,6 @@ function App() {
         <Routes>
           <Route path="/" element=
           {<LandingPage/>}/>
-          
-      {/*    {!isPageLoaded ? (
-          <AtomicSpinner />
-       ) : (
-        <LandingPage />
-       )} /> */}
           <Route path="/projectcollection" element={<ProjectCollection />} />
           <Route path="/projectcollection/slider" element={<ProjectSlider />} />
         </Routes>

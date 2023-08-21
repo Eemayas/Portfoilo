@@ -42,6 +42,7 @@ const ContactCard = ({ index, name, links, logo }) => {
           onClick={() => window.open(links, "_blank")}
         >
           <img
+            loading="lazy"
             src={logo}
             alt={name}
             className="w-full h-full object-contain py-5 px-5"

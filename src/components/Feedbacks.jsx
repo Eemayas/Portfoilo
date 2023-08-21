@@ -30,7 +30,12 @@ const FeedBackCard = ({
               {designation} of {company}
             </p>
           </div>
-          <img src={image} alt={`Feedback-by-${name}`} className="w-10 rounded-full object-cover" />
+          <img
+            loading="lazy"
+            src={image}
+            alt={`Feedback-by-${name}`}
+            className="w-10 rounded-full object-cover"
+          />
         </div>
       </div>
     </motion.div>
@@ -63,4 +68,4 @@ const Feedbacks = () => {
   );
 };
 
-export default SectionWrapper(Feedbacks,"feedback") ;
+export default SectionWrapper(Feedbacks, "feedback");

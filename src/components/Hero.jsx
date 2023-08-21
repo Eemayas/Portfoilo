@@ -9,63 +9,62 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const Hero = () => {
   return (
-      <section className=" mt-20 md:mt-10 mx-auto">
+    <section className=" mt-20 md:mt-10 mx-auto">
       <div
-          className={` bg-white bg-opacity-10 backdrop-blur-lg rounded-[50px] drop-shadow-lg w-full h-fit md:min-h-[80%] max-w-7xl mx-auto flex flex-col-reverse md:flex-row  p-6 md:p-20  gap-5 items-center border-transparent animate-circle-rotate`}
-        >
-        
-          <div className="m-0 w-[60%]">
-            <div
-              className={`inset-0 sm:w-[60%] mx-auto flex flex-row items-center justify-center gap-5`}
-            >
-              <div className="flex flex-col justify-center items-center mt-5">
-                <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-                <div className="w-1 sm:h-80 h-40 violet-gradient" />
-              </div>
-              <div>
-                <h1 className={`${styles.heroHeadText}`}>
-                  Hi, I'm{" "}
-                  <span className="text-[#915eff] ">
-                    <TypeAnimation
-                      sequence={["Prashant Manandhar", 1000]}
-                      wrapper="span"
-                      cursor={false}
-                    />
-                  </span>
-                </h1>
-                <p className={`${styles.heroSubText} mt-2 text-white-100 `}>
-                  <TypeAnimation
-                    sequence={[
-                      "Flutter Developer..",
-                      1000,
-                      "React Developer..",
-                      1000,
-                      "Web Developer..",
-                      1000,
-                    ]}
-                    cursor={true}
-                    repeat={Infinity}
-                    wrapper="span"
-                  />
-                </p>
-              </div>
+        className={` bg-white bg-opacity-10 backdrop-blur-lg rounded-[50px] drop-shadow-lg w-full h-fit md:min-h-[80%] max-w-7xl mx-auto flex flex-col-reverse md:flex-row  p-6 md:p-20  gap-5 items-center border-transparent animate-circle-rotate`}
+      >
+        <div className="m-0 w-[60%]">
+          <div
+            className={`inset-0 sm:w-[60%] mx-auto flex flex-row items-center justify-center gap-5`}
+          >
+            <div className="flex flex-col justify-center items-center mt-5">
+              <div className="w-5 h-5 rounded-full bg-[#915eff]" />
+              <div className="w-1 sm:h-80 h-40 violet-gradient" />
             </div>
-            <div className="pt-4 flex flex-row flex-wrap justify-center gap-5 md:gap-10">
-              {contacts.map((contact, index) => (
-                <ContactCard
-                  index={index}
-                  key={`contacts-${index}`}
-                  name={contact.name}
-                  links={contact.links}
-                  logo={contact.logo}
+            <div>
+              <h1 className={`${styles.heroHeadText}`}>
+                Hi, I'm{" "}
+                <span className="text-[#915eff] ">
+                  <TypeAnimation
+                    sequence={["Prashant Manandhar", 1000]}
+                    wrapper="span"
+                    cursor={false}
+                  />
+                </span>
+              </h1>
+              <p className={`${styles.heroSubText} mt-2 text-white-100 `}>
+                <TypeAnimation
+                  sequence={[
+                    "Flutter Developer..",
+                    1000,
+                    "React Developer..",
+                    1000,
+                    "Web Developer..",
+                    1000,
+                  ]}
+                  cursor={true}
+                  repeat={Infinity}
+                  wrapper="span"
                 />
-              ))}
+              </p>
             </div>
           </div>
-
-          <ProfileAvatars />
+          <div className="pt-4 flex flex-row flex-wrap justify-center gap-5 md:gap-10">
+            {contacts.map((contact, index) => (
+              <ContactCard
+                index={index}
+                key={`contacts-${index}`}
+                name={contact.name}
+                links={contact.links}
+                logo={contact.logo}
+              />
+            ))}
+          </div>
         </div>
-        <div className="mt-2 w-full flex justify-center items-center">
+
+        <ProfileAvatars />
+      </div>
+      <div className="mt-2 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
@@ -78,9 +77,9 @@ const Hero = () => {
               className="w-3 h-3 rounded-full bg-secondary mb-1"
             />
           </div>
-        </a></div>
-      </section>
-   
+        </a>
+      </div>
+    </section>
   );
 };
 
@@ -90,6 +89,8 @@ const ProfileAvatars = () => {
       <div className="w-60 relative flex justify-center items-center md:w-full h-full">
         <img
           src={ProfilePic2}
+          // className="shadow-slate-500 shadow-md aspect-w-16 aspect-h-9 w-48 h-27 rounded-2xl bg-center bg-cover duration-500 object-cover"
+          loading="lazy"
           className="shadow-slate-500 shadow-md aspect-w-16 aspect-h-9 w-auto h-auto rounded-2xl bg-center bg-cover duration-500 object-cover"
         />
       </div>
@@ -109,6 +110,7 @@ const ContactCard = ({ index, name, links, logo }) => {
         <img
           src={logo}
           alt={name}
+          loading="lazy"
           className="w-full h-full object-contain"
         ></img>
       </div>

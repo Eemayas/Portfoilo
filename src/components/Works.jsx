@@ -28,6 +28,7 @@ const ProjectCard = ({
       >
         <div className="relative w-full h-[230px]">
           <img
+            loading="lazy"
             src={image}
             alt="project_image"
             className="w-full h-full object-cover rounded-2xl"

@@ -44,19 +44,21 @@ const ProjectSlider = () => {
     setCurrentIndex(slideIndex);
   };
 
-
   return (
     <>
       <div className="max-w-[1400px] flex items-center justify-center h-auto gap-10 w-full m-auto py-16 px-4 relative group">
         <img
+          loading="lazy"
           src={slides[prevIndex].url}
           className="shadow-slate-500 shadow-md hidden lg:block w-[10%]  h-[60%] rounded-2xl bg-center bg-cover duration-500"
         />
         <img
+          loading="lazy"
           src={slides[currentIndex].url}
           className="shadow-slate-500 shadow-md aspect-w-16 aspect-h-9 w-auto md:w-[70%] h-auto rounded-2xl bg-center bg-cover duration-500 object-cover"
         />
         <img
+          loading="lazy"
           src={slides[nextIndex].url}
           className="shadow-slate-500 shadow-md hidden lg:block w-[10%]  h-[60%] rounded-2xl bg-center bg-cover duration-500"
         />

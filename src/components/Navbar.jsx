@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "./../style.js";
 import { navLinks } from "../constants";
@@ -19,7 +19,12 @@ const Navbar = () => {
             window.scroll(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-14 h-14 object-top"></img>
+          <img
+            loading="lazy"
+            src={logo}
+            alt="logo"
+            className="w-14 h-14 object-top"
+          ></img>
           <p className="text-white text-[18px] font-bold cursor-pointer ">
             Prashant
             <span className="sm:block hidden"> | Computer Engineering</span>
@@ -36,8 +41,7 @@ const Navbar = () => {
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
                 onClick={() => setActice(Links.title)}
               >
-               <a href={`#${Links.id}`}>{Links.title}</a>
-                
+                <a href={`#${Links.id}`}>{Links.title}</a>
               </li>
             );
           })}
@@ -46,6 +50,7 @@ const Navbar = () => {
           <img
             src={!toggle ? menu : close}
             alt="menu"
+            loading="lazy"
             className="w-[28px] h-[28px] object-contain cursor-pointer"
             onClick={() => setToogle(!toggle)}
           />
@@ -57,7 +62,7 @@ const Navbar = () => {
             <ul className=" list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((Links) => {
                 return (
-                  <li 
+                  <li
                     key={Links.id}
                     className={`${
                       actice === Links.title ? "text-white" : "text-secondary"
