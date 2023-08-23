@@ -29,7 +29,7 @@ const LandingPage = () => {
         <Contact />
       </div>
       {/* <Project /> */}
-    </div>
+     </div>
   );
 };
 
